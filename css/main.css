@@ -87,23 +87,99 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
-  color: #e2e3ed;
+html {
+  font-size: 16px;
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875em;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285;
+}
+
 
 /* ---- Header Styles ---- */
 
-   header {
+.logo {
     background-color: #203322;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+}
+
+.image-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.image-logo img {
+  width: 60%;  
+}
+
+.main-nav {
+  border-top: 2px solid #3a3a3a;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.main-nav ul li {
+  text-transform: uppercase;
+  list-style: none;
+  display: inline;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #e2e3ed;
+  font-weight: 700;
 }
 
 /* ---- Retreat Styles ---- */
 
 .container-1 {
-  background: url(../img/jake-melara-30679-unsplash.png) center no-repeat;
-  background-size: cover;
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: url(../img/jake-melara-30679-unsplash.png) center no-repeat #333;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.retreat {
+  margin-left: 20px;
+  margin-right: 35px;
 }
 
 /* ---- Join Styles ---- */
@@ -111,14 +187,75 @@ body {
 .container-2 {
   background-color: #527158;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.join {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.join p {
+  margin-right: 20px;
+}
+
+     /*Button styles from Join Container*/
+.form {
+  margin: 10px 0 30px 0;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helevetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ---- Details Styles ---- */
 
 .container-3 {
-  background: url(../img/rawpixel-800820-unsplash1.png) center no-repeat;
+  background: url(../img/rawpixel-800820-unsplash1.png) center no-repeat #333;
   background-size: cover;
   display: flex;
+}
+
+.details {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.details h2 {
+  margin-right: 30px;
+  margin-top: 50px;
+}
+.icon-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.icon-details article {
+  text-align: center;
+  width: 60%;
 }
 
 /* ---- Reviews Styles ---- */
@@ -126,7 +263,23 @@ body {
 .container-4 {
   background-color: #527158;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
+
+.reviews {
+  margin: 20px 20px;
+}
+
+.reviews h2 {
+  margin: 30px 30px 20px 0;
+}
+
+.reviews img {
+  width: 100%;
+}
+
 
 /* --- Footer Styles --- */
 
