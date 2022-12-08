@@ -95,7 +95,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   color: #e2e3ed;
-  text-align: left;
+  
 }
 
 h2 {
@@ -103,41 +103,42 @@ h2 {
   font-size: 1.875em;
   font-weight: 400;
   margin: 0;
+  text-align: left;
 }
 
 h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1.125em;
   font-weight: 400;
+  text-align: left;
 }
 
 p {
   font-size: 0.875em;
   line-height: 1.285;
+  text-align: left;
 }
 
 
 /* ---- Header Styles ---- */
 
-.logo {
+header {
     background-color: #203322;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-    height: auto;
+    flex-flow: column wrap;
 }
 
 .image-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  text-align: center;
 }
 
 .image-logo img {
   width: 60%;  
+  margin: 10px 0;
 }
 
 .main-nav {
@@ -150,7 +151,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
+  flex-wrap: wrap;
+  width: 65%;
+  margin: auto;
+  padding: 15px 0 20px 0;
 }
 
 .main-nav ul li {
@@ -254,8 +258,11 @@ input[type=button] {
 }
 
 .icon-details article {
-  text-align: center;
   width: 60%;
+}
+
+.icon-details p {
+  text-align: center;
 }
 
 /* ---- Reviews Styles ---- */
@@ -286,8 +293,15 @@ input[type=button] {
 footer {
   background-color: #203322;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
+footer h3,
+footer p {
+  text-align: center;
+}
 
 /* ==========================================================================
    Helper classes
