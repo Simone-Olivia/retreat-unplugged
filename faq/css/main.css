@@ -122,10 +122,6 @@ p {
   text-align: left;
 }
 
-.content-wrapper {
-  margin: 50px 20px 40px 20px;
-}
-
 
 /* ---- Header Styles ---- */
 
@@ -197,6 +193,10 @@ font-weight: 700;
 
 .main-content h3 {
   margin-right: 15px;
+}
+
+.main-content p {
+  margin-right: 20px;
 }
 
 /* ---- Footer Styles ---- */
