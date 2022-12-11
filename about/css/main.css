@@ -103,13 +103,15 @@ textarea {
     font-weight: 400;
     margin: 0;
     text-align: left;
+    line-height: 1.1;
   }
   
   h3 {
     font-family: "Poppins", sans-serif;
     font-size: 1.125em;
-    font-weight: 400;
+    font-weight: 700;
     text-align: left;
+    line-height: 0.9;
   }
   
   p {
@@ -119,7 +121,7 @@ textarea {
   }
   
   .content-wrapper {
-    margin: 0 20px 0 20px;
+    margin: 50px 20px 40px 20px;
   }
   
   /* ---- Header Styles ---- */
@@ -186,6 +188,9 @@ textarea {
   width: 100%;
 }
 
+.contact-section address {
+  font-style: normal;
+}
 
   /* --- Footer Styles --- */
 
@@ -195,6 +200,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  padding-top: 20px;
 }
 
 footer h3,

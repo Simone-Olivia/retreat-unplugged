@@ -296,6 +296,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  padding-top: 20px;
 }
 
 footer h3,
