@@ -95,7 +95,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   color: #e2e3ed;
-  
 }
 
 h2 {
@@ -123,7 +122,7 @@ p {
 /* ---- Header Styles ---- */
 
 header {
-    background-color: #203322;
+    background-color: #202322;
     width: 100%;
     height: auto;
     display: flex;
@@ -268,7 +267,7 @@ input[type=button] {
 /* ---- Reviews Styles ---- */
 
 .container-4 {
-  background-color: #527158;
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,7 +290,7 @@ input[type=button] {
 /* --- Footer Styles --- */
 
 footer {
-  background-color: #203322;
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,7 +301,13 @@ footer {
 footer h3,
 footer p {
   text-align: center;
+  font-style: none;
 }
+
+.contact {
+  display: flex;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -394,6 +399,159 @@ footer p {
 
 @media only screen and (min-width: 768px) {
 /* ---- Tablet Styles ---- */
+
+      /* ---- Body Styles ----- */
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+
+      /* ---- Header Styles ---- */
+header {
+  flex-flow: row;
+}
+
+.main-nav {
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding-right: 40px;
+  width: 40%;
+}
+
+.main-nav ul li {
+  text-align: ;
+}
+
+.image-logo {
+  text-align: left;
+  margin: 15px 0 15px 60px;
+}
+
+/* ---- Main Section Styles ---- */
+
+     /* ---- Retreat Styles ----- */
+
+.container-1 {
+  width: 100%;
+}
+.retreat h1 {
+  padding: 0 100px 0 40px;
+}
+
+     /* ---- Join Styles ---- */
+.join {
+  display: flex;
+  padding: 20px 40px 20px 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.join h3,
+.join p {
+  padding-right: 90px;
+}
+
+.join-retreat,
+.form {
+  width: 50%;
+}
+
+.form {
+  margin: 0;
+}
+
+    /* ---- Details Section Styles ---- */
+.details h2 {
+  padding-left: 40px;
+}
+
+.icon-details {
+  /* put 2 columns, 3 each */
+  flex-flow: row wrap;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.article-1,
+.article-2,
+.article-3,
+.article-4,
+.article-5,
+.article-6 {
+  flex: 0 0 50%;  
+}
+
+
+    /* ---- Reviews Styles ---- */
+    
+.container-4 {
+  padding: 30px 0 80px 40px;
+}
+.team {
+  display: flex; 
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.reviews h2 {
+  padding-right: 150px;
+}
+.reviews-photo,
+.reviewer {
+  width: 50%;
+}
+
+.reviews-photo img {
+  width: 95%;
+}
+
+.reviewer h3 {
+  margin: 0;
+}
+
+.reviewer p {
+  padding-right: 30px;
+}
+
+
+footer {
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+.contact {
+  width: 80%;
+}
+
+.contact-info address p {
+  font-style: normal;
+}
+
+.contact-info,
+.social {
+  flex: 0 0 50%;
+}
+
+.copyright {
+  flex: 0 0 100%;
+  padding-top: 100px;
+}
+
 }
 
 
