@@ -194,6 +194,7 @@ header {
   align-items: center;
   width: 100%;
   height: auto;
+  padding: 20px 0;
 }
 
 .join {
@@ -238,6 +239,7 @@ input[type=button] {
   background: url(../img/rawpixel-800820-unsplash1.png) center no-repeat #333;
   background-size: cover;
   display: flex;
+  padding-bottom: 20px;
 }
 
 .details {
@@ -278,6 +280,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-bottom: 20px;
 }
 
 .reviews {
@@ -301,19 +304,49 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 footer h3,
 footer p {
   text-align: center;
-  font-style: none;
+  font-style: normal;
 }
 
 .contact {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 30px;
+}
+
+.social h3 {
+  flex: 0 0 100%;
+}
+
+.social i {
+  color: #e2e3ed;
+  flex: 0 0 30%;
+  font-size: 1.125em;
+}
+
+.rounded-button {
+  width: 40px;
+  height: 40px;
+  background: #527158;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
 
 /* ==========================================================================
    Helper classes
@@ -454,6 +487,7 @@ header {
 
 .container-1 {
   width: 100%;
+  height: 600px;
 }
 .retreat h1 {
   padding: 0 100px 0 40px;
@@ -502,6 +536,9 @@ header {
   flex: 0 0 50%;  
 }
 
+.text {
+  padding: 0 85px;
+}
 
     /* ---- Reviews Styles ---- */
     
@@ -534,18 +571,23 @@ header {
   padding-right: 30px;
 }
 
+/* ---- Footer Styles ---- */
 
 footer {
   flex-direction: row;
-  padding-top: 40px;
 }
 
 .contact {
-  width: 80%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 80px;
 }
 
 .contact-info address p {
   font-style: normal;
+  padding-top: 10px;
 }
 
 .contact-info,
@@ -555,7 +597,7 @@ footer {
 
 .copyright {
   flex: 0 0 100%;
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 }
