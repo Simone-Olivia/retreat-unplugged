@@ -258,6 +258,12 @@ input[type=button] {
 
 .icon-details article {
   width: 60%;
+  padding: 20px 0;
+}
+
+.icon-details i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .icon-details p {
