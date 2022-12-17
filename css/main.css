@@ -333,6 +333,13 @@ footer p {
   flex: 0 0 100%;
 }
 
+.social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .social i {
   color: #e2e3ed;
   flex: 0 0 30%;
@@ -585,7 +592,7 @@ footer {
   justify-content: space-around;
   align-items: flex-start;
   width: 100%;
-  padding: 0 80px;
+  padding: 0 40px;
 }
 
 .contact-info address p {
@@ -596,6 +603,10 @@ footer {
 .contact-info,
 .social {
   flex: 0 0 50%;
+}
+
+.social-icons {
+  width: 80%;
 }
 
 .copyright {
@@ -649,6 +660,17 @@ input[type=button] {
   padding: 0 160px 0 70px;
 }
 
+.icon-details {
+  padding: 20px 80px;
+}
+.article-1,
+.article-2,
+.article-3,
+.article-4,
+.article-5,
+.article-6 {
+  flex: 0 0 30%;  
+}
 
 /* ---- Reviews Styles ---- */
 
@@ -661,11 +683,11 @@ input[type=button] {
 }
 
 .reviews-photo {
-  flex: 0 0 60%;
+  flex: 0 0 50%
 }
 
 .reviewer {
-  flex: 0 0 40%;
+  flex: 0 0 50%;
 }
 
 .reviewer p {
@@ -673,7 +695,15 @@ input[type=button] {
   line-height: 1.5;
 }
 
+/* ---- Footer Styles ---- */
 
+.contact {
+  padding: 0;
+}
+
+.social-icons {
+  width: 40%;
+}
 
 }
 
