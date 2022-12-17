@@ -206,30 +206,85 @@ textarea {
   left: 0;
 }
 
+/* --- Contact Styles ---- */
+
 .contact-section {
   background-color: #2a423a;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
   width: 100%;
 }
 
+.contact-section h2 {
+  padding-right: 10px;
+}
 .contact-section address {
   font-style: normal;
 }
 
   /* --- Footer Styles --- */
 
+/* --- Footer Styles --- */
+
 footer {
-  background-color: #203322;
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 footer h3,
 footer p {
   text-align: center;
+  font-style: normal;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 30px;
+}
+
+.social h3 {
+  flex: 0 0 100%;
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.social i {
+  color: #e2e3ed;
+  flex: 0 0 30%;
+  font-size: 1.125em;
+}
+
+.rounded-button {
+  width: 40px;
+  height: 40px;
+  background: #527158;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
 }
 
 
@@ -323,6 +378,75 @@ footer p {
 
 @media only screen and (min-width: 768px) {
 
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  .content-wrapper {
+    padding: 0 40px;
+    width: 100%;
+  }
+  
+        /* ---- Header Styles ---- */
+  header {
+    flex-flow: row;
+  }
+  
+  .main-nav {
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .main-nav ul {
+    margin: 0;
+    padding-right: 40px;
+    width: 40%;
+  }
+  
+  .main-nav ul li {
+    text-align: ;
+  }
+  
+  .image-logo {
+    text-align: left;
+    margin: 15px 0 15px 60px;
+  }
+
+/* ---- Mission Styles ---- */
+
+.mission-content {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 40px;
+}
+
+.mission h2 {
+  padding-right: 100px;
+  padding-bottom: 30px;
+}
+
+.mission-content p {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+.item-1 {
+  padding-right: 20px;
+}
+
+.item-2 {
+  padding-left: 10px;
+}
 
 /* ---- Map Style ---- */
 
@@ -330,13 +454,130 @@ footer p {
   padding-bottom: 45%;
 }
 
+
+/* ---- Contact Styles ---- */
+
+
+.contact-section h2 {
+  padding: 0 180px 30px 0;
+}
+
+.info {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contact-content,
+.facilitator-info {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+.facilitator-info {
+  padding-left: 20px;
+}
+
+
+/* ---- Footer Styles ---- */
+
+footer {
+  flex-direction: row;
+}
+
+.contact {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.contact-info address p {
+  font-style: normal;
+  padding-top: 10px;
+}
+
+.contact-info,
+.social {
+  flex: 0 0 50%;
+}
+
+.social-icons {
+  width: 80%;
+}
+
+.copyright {
+  flex: 0 0 100%;
+  padding-top: 40px;
+}
+
 }
 
 @media only screen and (min-width: 1200px) {
 /* ------ Desktop Styles ------ */
 
+/* ---- Header Styles ---- */
+
+.image-logo {
+  padding-left: 30px;
+}
+
+.main-nav {
+  padding-right: 30px;
+}
+
+/* ---- Mission Styles ----- */
+
+.mission h2 {
+  padding: 0 250px 0 30px;
+}
+
+.mission p {
+  padding: 30px 80px 0 30px;
+}
+
+/* ---- Map Styles ---- */
+
 .map figure {
   padding-bottom: 37.5%;
+}
+
+
+/* ---- Contact Styles ---- */
+
+.contact-section h2 {
+  padding: 0 180px 30px 30px;
+}
+
+.info {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contact-content,
+.facilitator-info {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+.contact-content {
+  padding-left: 30px;
+}
+
+.facilitator-info {
+  padding-left: 20px;
+}
+
+
+
+/* ---- Footer Styles ---- */
+
+.contact {
+  padding: 0;
+}
+
+.social-icons {
+  width: 40%;
 }
 
 

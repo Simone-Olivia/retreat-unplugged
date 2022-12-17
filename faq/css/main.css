@@ -102,7 +102,7 @@ body {
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 1.875em;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   text-align: left;
   line-height: 1.1;
@@ -149,6 +149,7 @@ border-top: 2px solid #3a3a3a;
 width: 100%;
 box-sizing: border-box;
 }
+
 .main-nav ul {
 list-style: none;
 display: flex;
@@ -183,6 +184,7 @@ font-weight: 700;
   align-items: center;
   flex-flow: column wrap;
   padding: 0 20px 40px 20px;
+  height: auto;
 }
 
 
@@ -202,18 +204,63 @@ font-weight: 700;
 /* ---- Footer Styles ---- */
 
 footer {
-  background-color: #203322;
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  padding-top: 20px;
+  padding-top: 40px;
+  height: auto;
 }
 
 footer h3,
 footer p {
   text-align: center;
   font-style: normal;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 30px;
+}
+
+.social h3 {
+  flex: 0 0 100%;
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.social i {
+  color: #e2e3ed;
+  flex: 0 0 30%;
+  font-size: 1.125em;
+}
+
+.rounded-button {
+  width: 40px;
+  height: 40px;
+  background: #527158;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
 }
 
 /* ==========================================================================
@@ -305,37 +352,181 @@ footer p {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+
+/* ---- Tablet Styles ---- */
+
+/* ---- Body Styles ----- */
+
+
+h1 {
+  font-size: 3em;
 }
 
-.mission-content {
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+
+      /* ---- Header Styles ---- */
+header {
+  flex-flow: row;
+}
+
+.main-nav {
+  border: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding-top: 20px
 }
 
-.mission-content p {
-  width: 45%;
+.main-nav ul {
+  margin: 0;
+  padding-right: 40px;
+  width: 40%;
 }
 
-.contact-section .content-wrapper h2 {
+.main-nav ul li {
+  text-align: ;
+}
+
+.image-logo {
+  text-align: left;
+  margin: 15px 0 15px 60px;
+}
+
+/* ---- Main Content Styles ---- */
+
+.main-content {
+  padding: 60px 60px 80px 60px;
+  flex-flow: row wrap;
+}
+
+.faq {
+  text-align: left;
+  width: 100%;  
+}
+
+.question {
+  flex: 0 0 50%;
+}
+
+.q2 h3,
+.q2 p,
+.q4 h3,
+.q4 p {
+  padding-left: 15px;
+}
+
+.q1 h3,
+.q1 p,
+.q3 h3,
+.q3 p {
+  padding-right: 15px;
+}
+
+/* ---- Footer Styles ---- */
+
+footer {
+  flex-direction: row;
+}
+
+.contact {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.contact-info address p {
+  font-style: normal;
+  padding-top: 10px;
+}
+
+.contact-info,
+.social {
+  flex: 0 0 50%;
+}
+
+.social-icons {
   width: 80%;
 }
 
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.copyright {
+  flex: 0 0 100%;
+  padding-top: 40px;
+}
+
 }
 
 @media only screen and (min-width: 1200px) {
 /* ------ Desktop Styles ------ */
+
+/* ---- Header Styles ---- */
+
+.image-logo {
+  padding-left: 30px;
 }
 
-.mission h2,
-.contact-section .content-wrapper h2 {
-      width: 95%;
+.main-nav {
+  padding-right: 30px;
 }
+
+/* ---- Main Content Styles ---- */
+
+.main-content {
+  /*padding: 60px 60px 80px 60px;*/
+  flex-flow: row wrap;
+}
+
+.main-content h2 {
+  padding-left: 20px;
+}
+
+.faq {
+  flex: 0 0 100%;
+  padding-left: 30px;
+}
+
+.question {
+  flex: 0 0 50%;
+}
+
+.q2 h3,
+.q2 p,
+.q4 h3,
+.q4 p {
+  padding-left: 15px;
+  padding-right: 80px;
+}
+
+.q1 h3,
+.q1 p,
+.q3 h3,
+.q3 p {
+  padding-right: 35px;
+  padding-left: 40px;
+}
+
+
+/* --- Footer Styles ---- */
+
+.contact {
+  padding: 0;
+}
+
+.social-icons {
+  width: 40%;
+}
+
+}
+
+
 
 /* ==========================================================================
    Print styles.
